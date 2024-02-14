@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sizing unit</title>
+    <style>
+        html {
+            font-size: 30px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            border: solid 2px black;
+            background-color: aqua;
+            box-sizing: border-box;
+            /* width: 1920px; */
+            width: 50vw;
+            height: 20vh;
+            margin: auto;
+        }
+
+        .box1 {
+            /* margin-top: 20px; */
+            box-sizing: border-box;
+            border: solid 2px black;
+            background-color: rgb(0, 140, 255);
+            /* width: 1920px; */
+            height: 80vh;
+            font-size: 20px;
+        }
+
+        .box1 p {
+            font-size: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        I am in a box
+    </div>
+    <div class="box1">
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed reprehenderit vel incidunt doloremque soluta a
+            quaerat cum debitis qui minus?
+        </p>
+    </div>
+</body>
+
+</html>
