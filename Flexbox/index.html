@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container {
+            border: 2px solid blue;
+            display: flex;
+            height: 80vh;
+            /* horizentaly centered  */
+            justify-content: center;
+            /* VERTICALY centered   */
+            /* if I have one line content then align-items and if the content takes more than 1 line (flex wraped) then align-content */
+            align-items: center;
+            /* flex-direction: column; */
+            flex-wrap: nowrap;
+            align-content: center;
+        }
+
+        .item {
+            height: 50px;
+            width: 50px;
+            border: 2px solid black;
+            /* margin: 5px; */
+            padding: 2px;
+            background-color: antiquewhite;
+
+
+            /* Centering text */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .order0 {
+            order: -1;
+        }
+
+        .order01 {
+            order: -2;
+        }
+
+        .order1 {
+            order: 1;
+        }
+
+        .order2 {
+            order: 2;
+        }
+
+        .order3 {
+            order: 3;
+        }
+
+        .item2 {
+            /* by default flex-grow for each item is 0 */
+            /* 2 means it will be bigger 2X than other items  */
+            /* flex-grow: 2; */
+            /* flex-shrink: 2 means it will shrink 2time faster than other items */
+            /* flex-shrink: 2; */
+            align-self: flex-start;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="item order3">1</div>
+            <div class="item item2">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item order0">7</div>
+            <div class="item order01">8</div>
+            <div class="item">9</div>
+            <div class="item">10</div>
+            <div class="item">11</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            <div class="item">9</div>
+            <div class="item order2">10</div>
+            <div class="item">11</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item item2">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            <div class="item">9</div>
+            <div class="item">10</div>
+            <div class="item order1">11</div>
+    </main>
+</body>
+
+</html>
