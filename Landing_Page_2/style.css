@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+    /* background-color:bisque; */
+}
+ /**------------------------ navbar css start  */
+.nav{
+    height: 100px;
+    width: 100%;
+    /* background-color: gray; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 40px;
+}
+
+.nav1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
+
+.nav1 h3{
+    border: 2px solid black;
+    padding: 5px 10px;
+    border-radius: 50px;
+    font-weight: 500;
+}
+.nav1 i{
+    border: 2px solid black;
+    padding: 5px 10px;
+    border-radius: 50px;
+    font-weight: 500;
+}
+
+.nav2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.nav2 h1{
+    font-weight: 500;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.nav3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.nav3 button {
+ padding:  7px 12px;
+  border-radius: 50px;
+  border: 1.5px solid #000;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: white;
+}
+
+#btn2{
+    background-color: orangered;
+    color: white;
+    border: none;
+}
+ /**------------------------ navbar css end  */
+
+
+
+  /**------------------------ Hero css start  */
+.main > h1{
+    font-size: 200px;
+    text-transform: uppercase;
+    font-weight: 400;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+}
+
+img{
+    height: 400px;
+    width: 350px;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+}
+
+#img1{
+    transform: translate(-50%, -50%) rotate(-30deg);
+    animation: rotateImg1 3.5s ease-out .5s;
+}
+#img2{
+    transform: translate(-50%, -50%) rotate(-20deg);
+    animation: rotateImg2 3s ease-out .6s;
+}
+#img3{
+    transform: translate(-50%, -50%) rotate(-10deg);
+    animation: rotateImg3 2s ease-out .7s;
+}
+
+  /**------------------------ Hero css end  */
+
+
+  /**------------------------ Footer css start  */
+
+  .footer{
+    width: 100%;
+    position: absolute;
+    bottom: 5%;
+    /* background-color: gray; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 40px;
+  }
+
+  .footer span{
+    color: orangered;
+    font-weight: 900;
+    display: block;
+  }
+ .footer-left{
+    font-weight: 600;
+ }
+
+.footer-right{
+    display: flex;
+    flex-direction: column;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.icons i{
+    font-size: 30px;
+}
+.fr-text{
+    margin-top: 5px;
+    font-weight: 600;
+}
+  /**------------------------ Footer css end  */
+
+
+
+
+  @keyframes rotateImg1 {
+    0% {
+        opacity: 0;
+        /* transform: translateY(50px); */
+       }
+   
+       100% {
+           opacity: 1;
+           transform: translate(-50%, -50%) rotate(-30deg);
+       }
+}
+  @keyframes rotateImg2 {
+    0% {
+        opacity: 0;
+        /* transform: translateY(50px); */
+       }
+   
+       100% {
+           opacity: 1;
+           transform: translate(-50%, -50%) rotate(-20deg);
+       }
+}
+  @keyframes rotateImg3 {
+    0% {
+        opacity: 0;
+        /* transform: translateY(50px); */
+       }
+   
+       100% {
+           opacity: 1;
+           transform: translate(-50%, -50%) rotate(-10deg);
+       }
+}
+
