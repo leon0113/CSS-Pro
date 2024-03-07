@@ -8,12 +8,15 @@
 html, body{
     height: 100%;
     width: 100%;
+    background-color: antiquewhite;
 }
 
 .main{
     height: 100%;
     width: 100%;
+    max-width: 1600px;
     background-color: antiquewhite;
+    margin: 0 auto;
 }
 /* ------------------------------nav */
 nav{
@@ -49,9 +52,9 @@ nav i{
 }
 
 .center h1{
-    font-size: 80px;
+    font-size: 4vw;
     font-weight: 500;
-    line-height: 90px;
+    line-height: 4.5vw;
 }
 
 .bckImg {
@@ -76,7 +79,7 @@ nav i{
 }
 
 .center2 p{
-    font-size: 22px;
+    font-size: 1vw;
     font-weight: 500;
     line-height:  35px;
     /* color: white; */
@@ -120,8 +123,82 @@ nav i{
 
 /* -----------------------------------------bottom image */
 
-.bottom{
-    /* height: 500px; */
-    width: 100%;
- /* background-color: blueviolet; */
-}  
+
+@media (max-width: 600px) {
+      .main{
+        height: 100%;
+        background-color: lightblue;
+    }
+    /* ------------------------------nav */
+ nav{
+    justify-content: center;
+ }
+ nav h4{
+     font-size: 18px;
+ }
+ nav i{
+     font-size: 18px;
+     padding: 13px;
+ }
+ 
+ /* -------------------------------------center */
+ .center{
+     height: 28%;
+     padding: 20px 40px;
+ }
+ 
+ .center h1{
+     font-size: 9.8vw;
+     line-height: 12vw;
+ }
+ 
+.mobileImg{
+    margin-top: 5px;
+    height: 24%;
+    background-image: url(https://images.unsplash.com/photo-1571875257727-256c39da42af?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+     background-size: cover;
+     background-position: center;
+}
+
+ .bckImg {
+    height: 37%;
+    background: none;
+    /* background-color: rgb(167, 167, 255); */
+ }
+ .center2{
+    /* height: 100%; */
+     flex-direction: column;
+     justify-content: center;
+     padding: 10px 20px;
+     box-sizing: border-box;
+     /* background-color: red; */
+
+ }
+ 
+ .center2 p{
+     font-size: 3.5vw;
+     line-height:  25px;
+ }
+ 
+ .center-right{
+    margin-top: 15px;
+     width: 100%;
+ }
+
+ .elem{
+    /* background-color: rgb(165, 165, 255); */
+    padding: 10px 0;
+    border-top: 1px solid #000;
+}
+
+.elem a{
+    font-size: 20px;
+}
+
+.elem i{
+    font-size: 20px;
+}
+ 
+
+ 
+}

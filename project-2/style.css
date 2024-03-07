@@ -1,0 +1,160 @@
+ *{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
+
+ html, body{
+    height: 100%;
+    width: 100%;
+ }
+
+ .main{
+    height: 100%;
+    width: 100%;
+    max-width: 1400px;
+    /* background-color: rgb(0, 0, 0); */
+    margin: 0 auto;
+    display: flex;
+    align-items: end;
+    /* justify-content: space-between; */
+    padding: 0px 50px;
+    padding-top: 150px;
+    gap: 70px;
+ }
+
+ .left{
+    height: 100%;
+    width: 48%;
+    /* background-color: antiquewhite; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+ .left h1{
+   font-size: 9vw;
+   font-weight: 300;
+   line-height: 7vw;
+   font-family: work sans;
+ }
+
+ .left-bottom{
+      /* height: 40%; */
+      width: 100%;
+      /* background-color: blueviolet; */
+ }
+
+
+.color{
+    /* background-color: rgb(235, 152, 50); */
+    width: fit-content;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
+    border-radius: 50px;
+}
+ 
+.color h5{
+    font-size: 20px;
+    margin-right: 10px;
+    font-weight: 500;
+}
+
+.color1{
+    height: 20px;
+    width: 20px;
+    background-color: rgb(9, 255, 0);
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    margin: 3px;
+}
+.color2{
+    height: 20px;
+    width: 20px;
+    background-color: rgb(255, 0, 221);
+    border-radius: 50%;
+}
+
+.left h2{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.left p{
+    font-size: 20px;
+    width: 60%;
+    font-weight: 500;
+    color: #333;
+    line-height: 25px;
+}
+
+
+
+
+ .right{
+    height: 100%;
+    width: 48%;
+    /* background-color: lightgreen; */
+    position: relative;
+ }
+
+ .right-top{
+    /* background-color: cadetblue; */
+    height: 6.5%;
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    padding: 0 100px;
+ }
+
+.right-top h4, h5{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.right-top h5 i{
+    font-size: 15px;
+ color: gold;
+ margin-left: 5px;
+}
+
+.right video{
+    width: 100%;
+    height: 93%;
+}
+
+.circle{
+    position: absolute;
+    right: 6%;
+    top: 20%;
+    height: 120px;
+    width: 120px;
+    background-color: #121327;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle h5{
+ font-size: 20px;
+ font-weight: 100;
+}
+
+.rotated{
+    position: absolute;
+    left: -10%;
+    bottom: 35%;
+    rotate: -90deg;
+}
