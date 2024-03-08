@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'work sans';
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.main{
+    height: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    /* background-color: aquamarine; */
+}
+
+nav{
+    height: 4vw;
+    width: 100%;
+    /* background-color: lightblue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0;
+}
+
+.logo{
+    height: 25px;
+    width: 25px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.nav-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2vw;
+}
+
+.nav-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+
+.nav-2 h4{
+    font-size: 0.8vw;
+    font-weight: 500;
+}
+
+.nav-2 h4 span{
+    color: gray;
+}
+
+.navItems{
+    /* background-color: bisque; */
+    height: 3.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2.5vw;
+    /* padding: 0 2vw; */
+}
+
+.navItems h3{
+    font-size: 0.9vw;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.content{
+    height: calc(100% - 7.5vw);
+    width: 100%;
+    /* background-color: blueviolet; */
+}
+
+.text-content{
+    height: 45%;
+    width: 100%;
+    /* background-color: rgb(201, 142, 55); */
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+
+.text-content::-webkit-scrollbar{
+    background-color: transparent;
+    height: 5px;
+}
+.text-content::-webkit-scrollbar-thumb{
+    background-color: rgb(238, 178, 66);
+}
+
+.elem{
+    flex-shrink: 0;
+    height: 100%;
+    width: 40%;
+    /* background-color: aquamarine; */
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;  
+}
+
+.elem h1{
+    font-size: 5vw;
+    font-weight: 300;
+    /* background-color: antiquewhite; */
+    padding-left: 6vw;
+}
+
+.elem h4{
+    /* background-color: aqua; */
+    display: flex;
+    gap: 4vw;
+    padding: 0 2vw;
+
+}
+.elem h4 span{
+    font-weight: 500;
+}
+.elem h4 p{
+    font-weight: 500;
+    color: gray;
+}
+
+.image-content{
+    height: 55%;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+
+.image-content::-webkit-scrollbar{
+   display: none;
+}
+.image-content::-webkit-scrollbar-thumb{
+    background-color: rgb(238, 178, 66);
+}
+
+
+.image-content img{
+    flex-shrink: 0;
+    width: 60%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}

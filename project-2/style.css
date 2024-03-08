@@ -181,20 +181,20 @@
         align-items: center;
         padding: 0px 0px;
         padding-top: 6vw;
-        gap: 25px;
+        gap: 10px;
      }
     
      .left{
-        height: 50%;
+        height: 55%;
         width: 100%;
         /* background-color: antiquewhite; */
         justify-content: center;
     }
     
      .left h1{
-       font-size: 17vw;
+       font-size: 15vw;
        font-weight: 300;
-       line-height: 13vw;
+       line-height: 12vw;
        font-family: work sans;
        padding: 5vw 30vw;
      }
@@ -220,11 +220,12 @@
     }
     
     .left h2{
-        margin-top: 15vw;
+        margin-top: 12vw;
         padding: 0px 10vw;
         margin-bottom: 15px;
         font-size: 25px;
         font-weight: 600;
+        color: rgb(44, 42, 42);
     }
     
     .left p{
@@ -232,13 +233,14 @@
         width: 100%;
         line-height: 20px;
         padding: 0px 7vw;
+        color: rgb(131, 130, 130);
     }
     
     
     
     
      .right{
-        height: 50%;
+        height: 52%;
         width: 48%;
         /* background-color: lightgreen; */
         position: relative;
@@ -299,6 +301,8 @@
         /* background-color: aqua; */
         /* height: 25vw; */
            position: absolute;
+           color: gray;
+           font-size: 20px;
            left: -75%;
            /* right: -14%; */
            bottom: 55%;
