@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(129, 126, 126);
+}
+
+img{
+    /* background-color: aqua; */
+    position: relative;
+    animation-name: tom;
+    animation-duration: 5s;
+    animation-delay: 1s;
+}
+
+@keyframes tom {
+    from{
+     left: 0;
+     top: 0;
+     transition: translate( 0%, 0%);
+    }
+    to{
+       left: 100%;
+       top: 100%;
+       transform: translate(-100%, -100%);
+    }
+}
