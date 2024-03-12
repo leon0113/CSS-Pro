@@ -10,23 +10,39 @@ html, body{
     background-color: rgb(129, 126, 126);
 }
 
-img{
-    /* background-color: aqua; */
+button{
+    border: 2px solid cyan;
+    margin: 50px;
+    background-color: black;
+    color: cyan;
+    padding: 10px 20px;
     position: relative;
-    animation-name: tom;
-    animation-duration: 5s;
-    animation-delay: 1s;
+    cursor: pointer;
+    transition: all linear 0.5s;
+    z-index: 1;
+    overflow: hidden;
 }
 
-@keyframes tom {
-    from{
-     left: 0;
-     top: 0;
-     transition: translate( 0%, 0%);
-    }
-    to{
-       left: 100%;
-       top: 100%;
-       transform: translate(-100%, -100%);
-    }
+button::after{
+    content: "";
+    height: 0px;
+    width: 0px;
+    border-radius: 50%;
+    background-color: cyan;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50% );
+    transition: all linear 0.5s;
+    z-index: -1;
+}
+
+button:hover::after{
+    height: 50px;
+    width: 50px;
+    transform: translate(-50%, -50% ) scale(2.5)
+}
+
+button:hover{
+    color: black;
 }
